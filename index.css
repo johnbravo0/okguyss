@@ -1,0 +1,177 @@
+main{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color:aliceblue;
+    background-image:url(../img/images__1_-removebg-preview.png), url(../img//b.jpg);
+    background-repeat: no-repeat;
+    background-size:125vh,cover ;
+    background-position:bottom, center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 180px;
+}
+main .main-intro h1{
+    font-size: 90px;
+    line-height: 80px;
+}
+main p{
+    font-size: 18px;
+    line-height: 30px;
+}
+main a{
+    font-size: 18px;
+    display: block;
+    background-color: rgb(190, 160, 160);
+    padding: 10px 20px;
+    width: fit-content;
+    margin-top: 30px;
+}
+main a:hover{
+    color: rgb(0, 17, 255);
+}
+main .main-quote p{
+    border-left: 4px solid blue;
+    padding-left: 20px;
+    margin: 40px 0;
+}
+main .main-quote p:nth-child(2){
+   margin-left: 100px;
+   
+}
+main .main-intro {
+    position: relative;
+    right: 20vh;
+    padding-bottom: 8vh;
+}
+main .main-quote{
+    position: relative;
+    left: 8vh;
+    padding-bottom: 8vh;
+}
+
+/*category*/
+
+.index-category{
+    width: 100%;
+    padding: 60px 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.index-category p{
+    color: #111;
+    text-align: center;
+    padding-bottom: 20px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.index-box{
+    width: 200px;
+    height: 200px;
+    background-color:#111;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.index-box:nth-child(2){
+    background-image: url(../img/napoli.jpg);
+}
+.index-box:nth-child(3){
+    background-image: url(../img/football\ field.jpg);
+}
+.index-box:nth-child(4){
+    background-image: url(../img/boots.jpg);
+}
+.index-box:nth-child(5){
+    background-image: url(../img/football.jpg);
+}
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    transition: all ease-in-out 200ms;
+}
+.index-box:hover .dark-overlay{
+    opacity: 0;
+}
+.index-box h3{
+    font-size: 28px;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: -2px 2px 4px #000;
+    z-index: 100;
+}
+
+
+/*about section*/
+.index-about{
+    width: 100%;
+    padding: 60px 0 ;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center ;
+    column-gap: 60px;
+    justify-content: center;
+}
+.index-about-img img{
+    width: 300px;
+    border-radius: 300px;
+}
+.index-about-text{
+    flex-basis: 455px;
+}
+.index-about-text p{
+    padding:20px 0  ;
+    
+}
+.index-about-text a{
+    font-size: 18px;
+    display: block;
+    background-color: rgb(190, 160, 160);
+    padding: 10px 20px;
+    width: fit-content;
+    margin-top: 30px;
+}
+.index-about-text a:hover{
+    color: rgb(17, 0, 255);
+}
+.index-about-skill{
+    flex-basis: 350px;
+    text-transform: uppercase;
+}
+.index-about-skill-bar{
+    width: calc(100% - 8px);
+    height: 20px;
+    border:4px solid rgb(255, 255, 255) ;
+}
+.index-about-skill-bar-fill{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(33, 4, 199);
+}
+.power{
+    width: 40%;
+}
+.contact{
+    width: 20%;
+}
+.finish{
+    width: 75%;
+}
+.heading{
+    width: 70%;
+}
+.aware{
+    width: 90%;
+}
